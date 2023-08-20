@@ -6,12 +6,10 @@
     <title>I Phone Seller</title>
 
     <!-- google fonts cdn link  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- font awesome cdn link  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -176,21 +174,14 @@
 
 <h1 class="title">contact us for latest updates</h1>
 
-<form action="">
-
+<form action="" onsubmit="return validateForm()">
     <div class="inputBox">
-        <input type="text" placeholder="first name">
-        <input type="text" placeholder="last name">
+        <input type="text" placeholder="Full Name" id="fname">
+        <input type="email" placeholder="your Email" id="email">
     </div>
+    <textarea  cols="30" rows="10" placeholder="message" id="txtArea"></textarea>
 
-    <div class="inputBox">
-        <input type="email" placeholder="your email">
-        <input type="password" placeholder="your password">
-    </div>
-
-    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-
-    <input type="submit" value="message" class="btn">
+    <input type="submit" value="message" class="btn" id="btn">
 
 </form>
 
@@ -310,6 +301,5 @@
 
 <!-- custom js file link  -->
 <script src="main.js"></script>
-
 </body>
 </html>
